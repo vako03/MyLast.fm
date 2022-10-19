@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Last fm app</string>
+    <string name="last_fm">Last.fm</string>
+    <string name="last_fm_app">Last.fm app</string>
+    <string name="select_your_genre">select your genre</string>
+    <string name="listeners_count">Listeners: %1$d</string>
+</resources>
