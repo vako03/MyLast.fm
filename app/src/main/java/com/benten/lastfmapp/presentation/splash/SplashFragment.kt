@@ -11,7 +11,9 @@ import android.view.animation.Animation
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.benten.lastfmapp.databinding.FragmentSplashBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class SplashFragment : Fragment() {
     private var _binding: FragmentSplashBinding? = null
     private val binding get() = _binding!!
@@ -42,7 +44,7 @@ class SplashFragment : Fragment() {
             val scaleFraction = 2 - (1 - animatedValue)
             binding.ivLogo.scaleX = scaleFraction
             binding.ivLogo.scaleX = scaleFraction
-                
+
 
         }
         alphaAnimator.addListener(object : Animator.AnimatorListener {
