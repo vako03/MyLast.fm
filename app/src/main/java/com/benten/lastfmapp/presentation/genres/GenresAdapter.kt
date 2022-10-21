@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.benten.lastfmapp.R
 import com.benten.lastfmapp.databinding.LayoutItemGenreBinding
 
+
 class GenresAdapter : RecyclerView.Adapter<GenresAdapter.GenresHolder>() {
 
     private val itemList = mutableListOf<GenreUIModel>()
@@ -15,6 +16,12 @@ class GenresAdapter : RecyclerView.Adapter<GenresAdapter.GenresHolder>() {
         return GenresHolder(
             LayoutItemGenreBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         )
+    }
+
+    fun updateAll(list: List<GenreUIModel>) {
+        this.itemList.clear()
+        this.itemList.addAll(list)
+        notifyDataSetChanged()
     }
 
     override fun onBindViewHolder(holder: GenresHolder, position: Int) {
@@ -34,5 +41,6 @@ class GenresAdapter : RecyclerView.Adapter<GenresAdapter.GenresHolder>() {
                 binding.root.context.getString(R.string.listeners_count, genre.listeners)
         }
     }
+
 
 }

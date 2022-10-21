@@ -1,6 +1,5 @@
-package com.benten.lastfmapp.presentation.models
+package com.benten.lastfmapp.domain.models
 
-import com.benten.lastfmapp.domain.models.Tag
 import com.google.gson.annotations.SerializedName
 
 data class TopTags(
