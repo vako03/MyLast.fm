@@ -26,7 +26,6 @@ class LoginViewModel: ViewModel() {
         }
     }
 
-    // A placeholder username validation check
     private fun isUserNameValid(username: String): Boolean {
         return if (username.contains("@")) {
             Patterns.EMAIL_ADDRESS.matcher(username).matches()
@@ -35,7 +34,6 @@ class LoginViewModel: ViewModel() {
         }
     }
 
-    // A placeholder password validation check
     private fun isPasswordValid(password: String): Boolean {
         return password.length > 5
     }
