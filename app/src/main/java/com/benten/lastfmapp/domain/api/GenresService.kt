@@ -12,5 +12,6 @@ interface GenresService {
         @Query("method") method: String = "tag.getTopTags",
         @Query("api_key") apiKey: String,
         @Query("format") format: String = "json"
+
     ): Response<GenresResponseModel>
 }
